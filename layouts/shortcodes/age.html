@@ -2,26 +2,30 @@
 <p id="age">
 </p>
 <script>
+const bDay = new Date('May 31, 2009');
 setInterval(function age() {
-    let difference = new Date() - new Date("May 31, 2009");
-    const years = Math.floor(difference / (1000 * 60 * 60 * 24 * 365));
-    difference -= years * (1000 * 60 * 60 * 24 * 365);
+    let difference = new Date() - bDay;
+    const years = Math.floor(difference / 31557600000);
+    difference -= years * 31557600000;
+
+    const months = Math.floor(difference / 2628000000);
+    difference -= months * 2628000000;
 
     // Calculate days
-    const days = Math.floor(difference / (1000 * 60 * 60 * 24));
-    difference -= days * (1000 * 60 * 60 * 24);
+    const days = Math.floor(difference / 86400000);
+    difference -= days * 86400000;
 
     // Calculate hours
-    const hours = Math.floor(difference / (1000 * 60 * 60));
-    difference -= hours * (1000 * 60 * 60);
+    const hours = Math.floor(difference / 3600000);
+    difference -= hours * 3600000;
 
     // Calculate minutes
-    const minutes = Math.floor(difference / (1000 * 60));
-    difference -= minutes * (1000 * 60);
+    const minutes = Math.floor(difference / 60000);
+    difference -= minutes * 60000;
 
     // Calculate seconds
     const seconds = Math.floor(difference / 1000);
-    document.getElementById('age').textContent = years + " years " + days + " days " + hours + " hours " + minutes + " minutes " + seconds + " seconds old.";
+    document.getElementById('age').textContent = years + " years " + months + " months " + days + " days " + hours + " hours " + minutes + " minutes " + seconds + " seconds old.";
     return age;
 }(), 1000);
 </script>

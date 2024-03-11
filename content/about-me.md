@@ -1,6 +1,6 @@
 +++
 title = 'About Me'
-draft = true
+draft = false
 +++
 
 name: onglee

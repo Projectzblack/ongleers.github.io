@@ -1,0 +1,126 @@
+#baseURL = 'https://example.org/'
+#languageCode = 'en-us'
+#title = 'My New Hugo Site'
+#theme = 'hermit-v2'
+
+# THIS IS AN EXAMPLE ON HOW YOU SHOULD CONFIGURE YOUR hugo.toml
+# See this hugo.toml in action at https://github.com/1bl4z3r/hermit-V2/blob/staging/hugo.toml
+# Example Site is Staging branch, acessible at https://github.com/1bl4z3r/hermit-V2/tree/staging
+# To see what each config does, refer to https://1bl4z3r.github.io/hermit-V2/en/posts/explaining-configs/
+# Open Issue or Pull Request at https://github.com/1bl4z3r/hermit-V2
+
+baseURL = "http://192.168.1.107:1313"
+#defaultContentLanguage = "en"
+#defaultContentLanguageInSubdir = true
+theme = "hermit-v2"
+
+#[languages]
+#  [languages.en]
+#    title = 'CHANGE ME'
+#    [languages.en.params]
+#      homeSubtitle = "CHANGE ME"
+#    weight = 1
+#  [languages.fr]
+#    title = 'CHANGE ME(FR)'
+#    [languages.fr.params]
+#      homeSubtitle = "CHANGE ME"
+#    weight = 2
+#  [languages.it]
+#    title = 'CHANGE ME(IT)'
+#    [languages.it.params]
+#      homeSubtitle = "CHANGE ME"
+#    weight = 3
+ 
+languageCode = "en-us"
+
+# title = "CHANGE ME"
+# enableGitInfo = true
+
+pygmentsCodefences  = true
+pygmentsUseClasses  = true
+#hasCJKLanguage = true
+
+rssLimit = 10
+
+copyright = "CHANGE ME"
+enableEmoji = true
+
+# googleAnalytics = "UA-123-45"
+# disqusShortname = "CHANGE ME"
+
+[params.author]
+  name = "onglee"
+  about = "about-me"
+
+[blackfriday]
+  # hrefTargetBlank = true
+  # noreferrerLinks = true
+  # nofollowLinks = true
+
+[taxonomies]
+  tag = "tags"
+  # Categories are disabled by default.
+  # category = "categories"
+
+[params]
+  dateform        = "Jan 2, 2006"
+  dateformShort   = "Jan 2"
+  dateformNum     = "02-01-2006"
+  dateformNumTime = "02-01-2006 15:04"
+
+  # description = "CHANGE ME SITE DESCRIPTION"
+  # images = [""]
+  themeColor = "#1e1e2e"
+
+  #homeSubtitle = "CHANGE ME HOME SUBTITLE"
+  #footerCopyright = "CHANGE ME FOOTER COPYRIGHT"
+  # bgImg = ""
+  # gitUrl = "https://github.com/1bl4z3r/hermit-V2/tree/staging"
+
+  justifyContent = false
+
+  relatedPosts = true
+  code_copy_button = true
+
+  homeSubtitlePrinter = true
+  scrollToTop = true 
+  global_mathjax = false
+  readTime = true
+  readTimeSeparator = ""
+  # legacyLayout = false
+  shareSocial = true
+  # googleTagManager = "GTM-XXXXXXXX"
+  # tagSymbol = "#"
+  # categorySymbol = "⊲"
+  
+  [[params.socialLinks]]
+    name = "last.fm"
+    url = "https://www.last.fm/user/onglee_"
+
+  [[params.socialLinks]]
+    name = "spotify"
+    url = "https://open.spotify.com/user/u7ro5wmop3n606rs1jafgxhw7"
+
+  [[params.socialLinks]]
+    name = "instagram"
+    url = "https://www.instagram.com/onglee.rs/"
+
+[menu]
+
+  [[menu.main]]
+    name = "Home"
+    url = "/"
+    weight = 3
+  
+  [[menu.main]]
+    name = "About"
+    url = "about-me/"
+    weight = 5
+  
+  [[menu.main]]
+    name = "Posts"
+    url = "posts/"
+    weight = 0
+
+[markup.goldmark.renderer]
+  unsafe = true

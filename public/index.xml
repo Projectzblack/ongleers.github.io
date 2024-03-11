@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title></title>
+    <link>http://192.168.1.107:1313/</link>
+    <description>Recent content on </description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>CHANGE ME</copyright>
+    <lastBuildDate>Sun, 10 Mar 2024 14:35:04 +0700</lastBuildDate>
+    <atom:link href="http://192.168.1.107:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Hi</title>
+      <link>http://192.168.1.107:1313/posts/hi/</link>
+      <pubDate>Sun, 10 Mar 2024 14:35:04 +0700</pubDate>
+      <guid>http://192.168.1.107:1313/posts/hi/</guid>
+      <description>Hi!!!!! </description>
+    </item>
+    <item>
+      <title>About Me</title>
+      <link>http://192.168.1.107:1313/about-me/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://192.168.1.107:1313/about-me/</guid>
+      <description>name: onglee&#xA;location: TH&#xA;favorite bands/artists: radiohead, the strokes, the smiths, nirvana, car seat headreast, the cardigans, arctic monkeys, the beatles, ミドリ, pink floyd, 宇宙ネコ子, underscores, kendrick lamar, MF DOOM</description>
+    </item>
+  </channel>
+</rss>
